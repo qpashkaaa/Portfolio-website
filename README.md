@@ -1,5 +1,5 @@
 # What It This?
-  **Portfolio website written in Next.js**
+  **Portfolio website written using Next.js**
   >*This is a portfolio website implemented using a framework Next.js . Made to demonstrate development skills, and additional study of this technology. The website design was created in the online graphic editor Figma. Based on the design created in Figma, this portfolio website was implemented.*
 
 ## [Preview]()
