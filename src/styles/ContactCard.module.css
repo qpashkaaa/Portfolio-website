@@ -1,0 +1,304 @@
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 60px;
+    width: 1048px;
+    height: 666px;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    background-color: #FFFFFF05;
+}
+
+.mainDiv200Code{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 60px;
+    width: 1048px;
+    height: 666px;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    background-color: #181A21;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(150%);
+    animation: ani 1s forwards;
+}
+@keyframes ani {
+    0% {transform: translateX(150%);}
+    100% {transform: translateX(0);}
+}
+
+.headerDiv{
+    color: #FFFFFF;
+    font-size: 45px;
+    background: transparent;
+}
+
+.nameAndEmailDiv{
+    display: flex;
+    background: transparent;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.nameDiv{
+    background: transparent;
+}
+
+.emailDiv{
+    background: transparent;
+}
+
+.shortInput,
+.longInput{
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    color: #868A9B;
+    padding: 20px 33px;
+    outline:none;
+    background: transparent;
+}
+
+.shortInput{
+    width: 438px;
+    height: 65px;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.longInput{
+    width: 100%;
+    height: 65px;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.messageTextArea{
+    width: 100%;
+    height: 170px;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    color: #868A9B;
+    padding: 20px 33px;
+    outline:none;
+    resize: none;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.themeDiv,
+.messageDiv{
+    background: transparent;
+    padding-bottom: 30px;
+}
+
+.submitButtonDiv{
+    background-color: #0D0F15;
+    width: 100%;
+    height: 65px;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    line-height: 65px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.submitButtonDiv:hover{
+    background-color: #FFFFFF;
+    color: #0D0F15;
+}
+
+
+.submitButtonDiv:active{
+    transition: background 0s ease, color 0s ease;
+    background-color: #0D0F15;
+}
+
+.submitButtonDiv:not(:active){
+    -webkit-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
+    -ms-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear;
+}
+
+.submitButtonDivError{
+    background-color: #0D0F15;
+    width: 100%;
+    height: 65px;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    line-height: 65px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+
+.longInput::-webkit-input-placeholder,
+.shortInput::-webkit-input-placeholder,
+.messageTextArea::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+    color:    #868A9B;
+}
+
+.longInput:-moz-placeholder,
+.shortInput:-moz-placeholder,
+.messageTextArea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #868A9B;
+   opacity:  1;
+}
+
+.longInput::-moz-placeholder,
+.shortInput::-moz-placeholder,
+.messageTextArea::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #868A9B;
+   opacity:  1;
+}
+
+.longInput::-ms-input-placeholder,
+.shortInput::-ms-input-placeholder,
+.messageTextArea:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+   color:    #868A9B;
+}
+
+.longInput::-ms-input-placeholder,
+.shortInput::-ms-input-placeholder,
+.messageTextArea::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #868A9B;
+}
+
+.longInput::placeholder,
+.shortInput::placeholder,
+.messageTextArea::placeholder { /* Most modern browsers support this now. */
+   color:    #868A9B;
+}
+
+.hide200Code{
+    display:none;
+}
+
+@media only screen and (max-width : 992px) {   
+    .mainDiv200Code{
+        width: 100vw;
+    }
+
+    .mainDiv{
+        width: 100vw;
+        height: 770px;
+    }
+
+    .nameAndEmailDiv{
+        flex-direction: column;
+    }
+
+    .shortInput{
+        width: 100%;
+    }
+
+    .nameAndEmailDiv{
+        padding: 0;
+    }
+
+    .nameDiv{
+        padding: 20px 0;
+    }
+
+    .emailDiv{
+        padding-bottom: 20px;
+    }
+
+    .messageDiv{
+        padding-bottom: 40px;
+    }
+
+    .themeDiv{
+        padding-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .headerDiv{
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width : 480px) {
+    .mainDiv{
+        padding: 50px 10px;
+    }
+
+    .headerDiv{
+        font-size: 21px;
+    }
+
+    .shortInput{
+        padding: 10px 20px;
+        font-size:14px;
+    }
+
+    .longInput{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .messageTextArea{
+        padding: 20px 20px;
+        font-size: 14px;
+    }
+
+    .submitButtonDiv{
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+    }
+    .mainDiv{
+        height: 730px;
+    }
+
+    .mainDiv200Code{
+        padding: 50px 10px;
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .mainDiv{
+        padding: 30px 10px;
+    }
+    .headerDiv{
+        font-size: 14px;
+    }
+
+    .shortInput{
+        height: 45px;
+        padding: 5px 10px;
+        font-size:10px;
+    }
+
+    .longInput{
+        height: 45px;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .themeDiv{
+        padding-bottom: 30px;
+    }
+    .messageTextArea{
+        padding: 20px 13px;
+        font-size: 10px;
+    }
+
+    .submitButtonDiv{
+        height: 30px;
+        line-height: 30px;
+        font-size: 10px;
+    }
+    .mainDiv{
+        height: 550px;
+    }
+
+    .mainDiv200Code{
+        height: 40vh;
+    }
+}

@@ -1,0 +1,50 @@
+.mainFlex{
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.leftArrow,
+.rightArrow{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    background-image: url(../../public/static/images/arrowLeft.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.leftArrow{
+    background-color: #0F1117;
+    background-image: url(../../public/static/images/arrowLeft.svg);
+}
+
+.rightArrow{
+    background-color: #FFFFFF;
+    background-image: url(../../public/static/images/arrowRight.svg);
+}
+
+.leftArrow:active{
+    background-color: #FFFFFF;
+}
+
+.rightArrow:active{
+    background-color: #0F1117;
+}
+
+.leftArrow:not(:active),
+.rightArrow:not(:active){
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+
+@media only screen and (max-width : 992px) {
+    .mainFlex{
+        display: none;
+    }
+}

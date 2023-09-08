@@ -1,0 +1,57 @@
+.outherDiv{
+    height: 40px;
+    border-bottom: 5px #1C2338 solid;
+}
+
+.innerFlexDiv{
+    display: flex;
+    border-bottom: 5px #FFFFFF solid;
+    padding: 6.6px 0;
+}
+
+.textDiv,
+.percentageDiv{
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.percentageDiv{
+    margin-left: auto;
+}
+
+@media only screen and (max-width : 992px) {
+    .outherDiv{
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .outherDiv{
+        margin-right: 80px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .outherDiv{
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .textDiv{
+        font-size: 10px;
+    }
+    .percentageDiv{
+        font-size: 10px;
+    }
+    .outherDiv{
+        border-bottom: 3px #1C2338 solid;
+        height: 29px;
+    }
+
+    .innerFlexDiv{
+        border-bottom: 3px #FFFFFF solid;
+    }
+}

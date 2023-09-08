@@ -1,0 +1,91 @@
+.mainFlexDiv{
+    display: flex;
+    justify-content: center;
+    background: #181A21;
+    align-items: center;
+    width: 100%;
+    box-shadow: 1600px 0 0 0 #181A21, -1600px 0 0 0 #181A21;
+    padding: 3% 0;
+    left:0;
+}
+
+.wrapperFlexDiv{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1634px;
+    width: 1634px;
+    background: #181A21;
+}
+
+.leftFlexDiv,
+.centerFlexDiv,
+.rightFlexDiv{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Syne', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: #181A21;
+}
+
+.numberDiv{
+    background: #181A21;
+    font-size: 75px;
+}
+
+.textDiv{
+    background: #181A21;
+    font-size: 35px;
+}
+
+@media only screen and (max-width : 1634px) {
+    .mainFlexDiv{
+        box-shadow: 1200px 0 0 0 #181A21, -1200px 0 0 0 #181A21;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .numberDiv{
+        font-size: 55px;
+    }
+    .textDiv{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .wrapperFlexDiv{
+        padding: 0 25px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .numberDiv{
+        font-size: 40px;
+    }
+    .textDiv{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .wrapperFlexDiv{
+        padding: 0 10px;
+    }
+    .numberDiv{
+        font-size: 30px;
+    }
+    .textDiv{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .numberDiv{
+        font-size: 25px;
+    }
+    .textDiv{
+        font-size: 10px;
+    }
+}

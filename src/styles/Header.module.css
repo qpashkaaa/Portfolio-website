@@ -1,0 +1,19 @@
+.desktopUl{
+    font-size: 25px;
+    text-align: right;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+}
+
+.desktopUl li{
+    display: inline-block;
+    margin: 80px 30px 10px 30px;
+    padding: 5px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px) {
+    .header{
+        display:none;
+    }
+}

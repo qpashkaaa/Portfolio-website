@@ -1,0 +1,122 @@
+.mainFlex{
+    width: 500px;
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    padding: 0% 3%;
+}
+
+.numberDiv{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 125px;
+    background: transparent;
+    text-align: right;
+    margin-bottom: 5%;
+}
+
+.imageDiv{
+    background: transparent;
+}
+
+.mainTextDiv{
+    font-size: 25px;
+    background: transparent;
+    padding: 5% 0;
+}
+
+.supportTextDiv{
+    font-size: 20px;
+    background: transparent;
+    line-height: 33px;
+}
+
+@media only screen and (max-width : 1634px) {
+    .mainFlex{
+        width: 350px;
+        height: 350px;
+    }
+    .numberDiv{
+        font-size: 90px;
+    }
+    .mainTextDiv{
+        font-size: 18px;
+        padding: 5% 0;
+    }
+    .supportTextDiv{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .mainFlex{
+        width: 320px;
+        height: 320px;
+    }
+    .numberDiv{
+        font-size: 80px;
+    }
+    .mainTextDiv{
+        font-size: 18px;
+        padding: 3% 0;
+    }
+    .supportTextDiv{
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .mainFlex{
+        margin-right: 50px;
+        min-width: 320px;
+        min-height: 320px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .mainFlex{
+        margin-right: 5vw;
+        padding: 5px 45px;
+        min-width: 95vw;
+        min-height: 320px;
+    }
+    .supportTextDiv{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .mainFlex{
+        padding: 5px 15px;
+    }
+    .numberDiv{
+        font-size: 65px;
+    }
+    .mainTextDiv{
+        padding: 5% 0;
+    }
+    .supportTextDiv{
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .mainFlex{
+        min-height: 290px;
+        height: 290px;
+        min-width: 90vw;
+    }
+
+    .mainTextDiv{
+        font-size: 13px;
+    }
+    .supportTextDiv{
+        font-size: 10px;
+    }
+}
+

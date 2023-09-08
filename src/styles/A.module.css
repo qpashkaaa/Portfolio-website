@@ -1,0 +1,62 @@
+.link{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.dotUnder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.dotUnder div {
+	position: absolute;
+	transform: translatey(25px);
+	-webkit-appearance: none;
+	background: none;
+	color: white;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	z-index: 10;
+}
+
+.dotUnder div span {
+	display: block;
+	position: relative;
+	line-height: 10px;
+	height: 10px;
+}
+
+.dotUnder div > span > span:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #ffffff;
+	content: attr(data-attr-span);
+	width: 0%;
+	height: 100%;
+	background: white;
+	white-space: nowrap;
+	text-align: center;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	transition: width 0.2s;
+	border-radius: 100%;
+}
+
+.dotUnder:hover div > span > span:after {
+	opacity: 1;
+	border-bottom: 1px solid white;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	transition: opacity 0s ease-out 0.29s, width 0.09s ease-out 0.3s;
+}

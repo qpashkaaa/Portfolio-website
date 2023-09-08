@@ -1,0 +1,46 @@
+.pagePartBackground{
+    display: none;
+}
+
+.mainDiv{
+    display:flex;
+    flex-direction: column;
+    background: transparent;
+    padding-bottom: 5%;
+    margin-top: -5%;
+    overflow: auto;
+}
+
+.arrowDiv{
+    background: transparent;
+    margin-left: auto;
+    padding-bottom: 1%;
+}
+
+.cardsDiv{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    transform: translateX(150%);
+    animation: ani 1s forwards;
+}
+@keyframes ani {
+    0% {transform: translateX(150%);}
+    100% {transform: translateX(0);}
+}
+
+@media only screen and (max-width : 992px) {
+    .pagePartBackground{
+        display: block;
+    }
+    .mainDiv{
+        padding: 5% 0;
+    }
+    .cardsDiv{
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+}

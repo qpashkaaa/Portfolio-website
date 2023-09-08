@@ -1,0 +1,190 @@
+.mainDiv{
+    display:flex;
+    justify-content: space-between;
+    background: transparent;
+    align-items: center;
+    margin-top: -10%;
+}
+
+.leftDiv{
+    padding: 15% 0;
+    width: 48%;
+    background: transparent;
+}
+
+.leftDivImg{
+    width:100%;
+}
+
+.centerDiv{
+    width: 5px;
+    height: 1084px;
+    background: linear-gradient(153deg, #E40037 0%, #A00027 56.25%, #0D1117 100%);
+}
+
+.rightDiv{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    background: transparent;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+}
+
+.firstRightDivText{
+    font-size: 16px;
+    padding-bottom: 4%;
+}
+
+.secondRightDivText{
+    font-size: 55px;
+}
+
+.thirdRightDivText{
+    font-size: 40px;
+}
+
+.fourthRightDivText{
+    font-size: 20px;
+    color: #868A9B;
+    padding: 5% 0;
+}
+
+.fifthRightDivText{
+    font-size: 20px;
+    color: #868A9B;
+}
+
+.sixthRightFlexDiv{
+    font-size: 16px;
+    display: flex;
+    padding: 10% 0%;
+}
+
+.sixthRightFlexDivLeftInfo,
+.sixthRightFlexDivRightInfo{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.sixthRightFlexDivLeftInfo{
+    align-items: flex-end;
+    padding-right: 3%;
+}
+
+.link{
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width : 1634px) {
+    .firstRightDivText{
+        font-size:13px;
+    }
+    .secondRightDivText{
+        font-size: 35px;
+    }
+    .thirdRightDivText{
+        font-size: 25px;
+    }
+    .fourthRightDivText{
+        font-size: 18px;
+    }
+    .fifthRightDivText{
+        font-size: 18px;
+    }
+    .sixthRightFlexDiv{
+        font-size: 14px;
+    }
+} 
+
+@media only screen and (max-width : 1200px) {
+    .centerDiv{
+        height: 900px;
+    }
+}
+@media only screen and (max-width : 768px) {
+    .leftDiv{
+        display: none;
+    }
+    .centerDiv{
+        height: 85vh;
+    }
+    .rightDiv{
+        margin-top: -125px;
+        width: 95vw;
+    }
+
+    .mainDiv{
+        align-items: flex-start;
+        margin-top: 8vh;
+    }
+
+    .firstRightDivText{
+        display: none;
+    }
+    .sixthRightFlexDiv{
+        padding: 5% 0;
+        font-size: 16px;
+    }
+    .secondRightDivText{
+        background: transparent;
+        padding-top: 120px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .secondRightDivText{
+        font-size: 25px;
+    }
+    .thirdRightDivText{
+        font-size: 20px;
+    }
+    .fourthRightDivText{
+        font-size: 14px;
+    }
+    .fifthRightDivText{
+        font-size: 14px;
+    }
+    .sixthRightFlexDiv{
+        font-size: 10px;
+    }
+    .mainDiv{
+        margin-top: 15vh;
+    }
+    .centerDiv{
+        height: 60vh;
+    }
+    .sixthRightFlexDivRightInfo{
+        gap:10px;
+    }
+    .sixthRightFlexDivLeftInfo{
+        gap:10px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .secondRightDivText{
+        font-size: 20px;
+    }
+    .thirdRightDivText{
+        font-size: 15px;
+    }
+    .fourthRightDivText{
+        font-size: 10px;
+    }
+    .fifthRightDivText{
+        font-size: 10px;
+    }
+    .sixthRightFlexDiv{
+        font-size: 10px;
+    }
+    .mainDiv{
+        margin-top: 10vh;
+    }
+    .centerDiv{
+        height: 70vh;
+    }
+}
+

@@ -1,0 +1,39 @@
+html { 
+    scroll-behavior: smooth; 
+    overflow-x:hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+header {
+    transform: translateY(-150%);
+    animation: ani 1s forwards;
+  }
+  
+  @keyframes ani {
+    0% {transform: translateY(-150%);}
+    100% {transform: translateY(0);}
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0D0F15;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+   
+::-webkit-scrollbar-thumb {
+    background: #FFFFFF; 
+}

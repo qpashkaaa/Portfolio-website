@@ -1,0 +1,76 @@
+.mainDiv{
+    display: flex;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    color: #FFFFFF;
+    padding: 40px 40px;
+    width: 100%;
+    align-items: center;
+}
+
+.rangeOfYearsDiv{
+    font-size:24px;
+    font-weight: medium;
+    width: 25%;
+    text-align: center;
+}
+
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.mainTextDiv{
+    font-size:28px;
+}
+
+.supportTextDiv{
+    font-size: 20px;
+    color: #AFAFAF;
+    padding: 5px 0;
+}
+
+@media only screen and (max-width : 1634px) {
+    .mainTextDiv{
+        font-size: 23px;
+    }
+    .supportTextDiv{
+        font-size: 18px;
+    }
+    .rangeOfYearsDiv{
+        font-size: 19px;
+    }
+} 
+@media only screen and (max-width : 1200px) {
+    .mainTextDiv{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .mainDiv{
+        padding: 30px 10px;
+    }
+    .mainTextDiv{
+        font-size: 14px;
+    }
+    .supportTextDiv{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .mainDiv{
+        padding: 25px 0;
+    }
+    .mainTextDiv{
+        font-size: 10px;
+    }
+    .supportTextDiv{
+        font-size: 8px;
+    }
+    .rangeOfYearsDiv{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,112 @@
+.circleUpper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.circleUpper,
+.circleUnder {
+    width: 587px;
+    height: 587px;
+    border: 44px solid #E40037;
+    border-radius: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: transparent;
+}
+
+.portfolioImage {
+    padding: 0;
+    width: 466px;
+    height: 611px;
+    background: transparent;
+}
+
+.container {
+    position: relative;
+}
+
+.lowerSemicircle{
+    width: 587px;
+    height: 293.5px;
+    border-bottom-left-radius: 293.5px;
+    border-bottom-right-radius: 293.5px;
+    border: 44px solid #E40037;
+    border-top: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: transparent;
+    position: absolute;
+    top: 293.5px;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.externalCircleUnder{
+    width: 640px;
+    height: 640px;
+    border-radius: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: transparent;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+}
+
+@media only screen and (max-width : 1634px) {
+    .circleUpper,
+    .circleUnder{
+        width: 500px;
+        height: 500px;
+    }
+    .portfolioImage{
+        width: 366px;
+        height: 511px;
+    }
+    .lowerSemicircle{
+        width: 500px;
+        height: 250.5px;
+        top: 250.5px;
+    }
+    .externalCircleUnder{
+        width: 553px;
+        height: 553px;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .circleUpper,
+    .circleUnder{
+        width: 450px;
+        height: 450px;
+    }
+    .portfolioImage{
+        width: 300px;
+        height: 445px;
+    }
+    .lowerSemicircle{
+        width: 450px;
+        height: 225px;
+        top: 225px;
+    }
+    .externalCircleUnder{
+        width: 500px;
+        height: 500px;
+        backdrop-filter: blur(12px);
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px) {
+    .container{
+        display:none;
+    }
+}

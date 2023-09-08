@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "type": "Website",
+        "shortDescription":"Это веб-сайт портфолио, реализованный с использованием фреймворка Next.js. Сделан для демонстрации навыков разработки, и дополнительного изучения данной технологии. Дизайн сайта был создан в графическом онлайн-редакторе Figma. Основываясь на дизайн, созданный в Figma, был реализован данный веб-сайт портфолио.",
+        "imgSrc":"../../static/images/portfolioCardsImages/PortfolioWebsite.png",
+        "firstButtonText": "Code",
+        "firstHref":"https://github.com/qpashkaaa",
+        "addCodeButton":false,
+        "secondHref":""
+    },
+    {
+        "id": 2,
+        "type": "Website",
+        "shortDescription":"Это веб-сайт, написанный для организации с использованием HTML, JavaScript, CSS, PHP, MySQL(phpMyAdmin). Позволяет просматривать необходимую информацию, а так же генерировать QR-код для оплаты с ведением логов его создания в БД MySQL. Данный веб-сайт был спроектирован и создан, исходя из пожеланий заказчика.",
+        "imgSrc":"../../static/images/portfolioCardsImages/PoverkaGazVoda.png",
+        "firstButtonText": "Demo",
+        "firstHref":"https://www.poverka-gazvoda.ru/",
+        "addCodeButton":false,
+        "secondHref":""
+    },
+    {
+        "id": 3,
+        "type": "Desktop",
+        "shortDescription":"Это десктопное CRUD приложение, написанное с использованием WPF(MVVM), PostgreSQL, EntityFramework. Оно было создано для освоения данных технологий и изучения паттерна разработки Model-View-ViewModel(MVVM). Приложение позволяет создавать, просматривать, обновлять и удалять данные в БД PostgreSQL.",
+        "imgSrc":"../../static/images/portfolioCardsImages/WarehouseAccounting.png",
+        "firstButtonText": "Code",
+        "firstHref":"https://www.youtube.com/",
+        "addCodeButton":true,
+        "secondHref":"https://github.com/qpashkaaa"
+    },
+    {
+        "id": 4,
+        "type": "Website",
+        "shortDescription":"Это дашборд начальника цеха АО `ТЗ `Ревтруд`, написанный с использованием HTML, JavaScript, CSS, PHP, MySQL(phpMyAdmin). Позволяет зарегистрироваться, авторизироваться, а так же просматривать необходимую информацию. Данный дашборд был реализован в целях освоения учебной программы МК ТГТУ (г.Тамбов).",
+        "imgSrc":"../../static/images/portfolioCardsImages/Dashboard.png",
+        "firstButtonText": "Demo",
+        "firstHref":"https://www.youtube.com/",
+        "addCodeButton":true,
+        "secondHref":"https://github.com/qpashkaaa"
+    },
+    {
+        "id": 5,
+        "type": "Desktop",
+        "shortDescription":"Это десктопное приложение - сборник лабораторных работ по предмету `Операционные системы`. Основные задачи работ - изучение Win32API, архитектуры ОС, исследование потоков, изучение InterProcess Communication, создание эмулятора планировщика процессов ОС. Реализовано в целях освоения учебной программы кафедры САПР ТГТУ (г.Тамбов).",
+        "imgSrc":"../../static/images/portfolioCardsImages/OperatingSystemsLR.png",
+        "firstButtonText": "Demo",
+        "firstHref":"https://www.youtube.com/",
+        "addCodeButton":true,
+        "secondHref":"https://github.com/qpashkaaa"
+    }
+]

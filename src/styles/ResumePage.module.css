@@ -1,0 +1,14 @@
+.mainDiv{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+    margin-top: -5%;
+}
+
+@media only screen and (max-width : 992px) {   
+    .mainDiv{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,37 @@
+.customLiDiv{
+    background: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tabTextDiv{
+    padding: 10px 0;
+    background: transparent;
+}
+
+.textUnderline{
+    height: 4px;
+    background-color: #FFFFFF;
+    transition: width 0.5s;
+}
+
+.customLiDiv:active .textUnderline{
+    background-color: #181A21;
+}
+
+.customLiDiv:not(:active) .textUnderline{
+    -webkit-transition: width 0.5s, background-color 500ms linear;
+    -moz-transition: width 0.5s, background-color 500ms linear;
+    -o-transition: width 0.5s, background-color 500ms linear;
+    -ms-transition: width 0.5s, background-color 500ms linear;
+    transition: width 0.5s, background-color 500ms linear;
+  }
+
+.customLiDiv:hover .textUnderline{
+    width: 50%;
+}
+
+@media only screen and (max-width : 480px) {
+    .textUnderline{
+        height: 2px;
+    }
+}

@@ -1,0 +1,46 @@
+.mainDiv{
+    display:flex;
+    flex-direction: column;
+    background: transparent;
+    padding-bottom: 5%;
+    margin-top: -5%;
+}
+
+.arrowDiv{
+    background: transparent;
+    margin-left: auto;
+    padding-bottom: 1%;
+}
+
+.cardsDiv{
+    background: transparent;
+    transform: translateX(150%);
+    animation: ani 1s forwards;
+}
+@keyframes ani {
+    0% {transform: translateX(150%);}
+    100% {transform: translateX(0);}
+}
+
+.cardsDivUnactive{
+    display: none;
+}
+
+.headerCardsSection{
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.cardsRow{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+@media only screen and (max-width : 992px) {
+    .pagePartBackground{
+        display: none;
+    }
+}

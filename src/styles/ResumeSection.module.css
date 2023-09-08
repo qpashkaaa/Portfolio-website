@@ -1,0 +1,51 @@
+.mainDiv{
+    background: transparent;
+    font-size:24px;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    color: #FFFFFF;
+}
+
+.headTextDiv{
+    background: transparent;
+    width: 677px;
+    padding: 30px 0;
+    border-bottom: 2px #28292E solid;
+}
+
+.resumeCardsDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width : 1634px) {
+    .headTextDiv{
+        width: 550px;
+    }
+} 
+
+@media only screen and (max-width : 1200px) {
+    .headTextDiv{
+        width: 470px;
+    }
+} 
+
+@media only screen and (max-width : 992px) {   
+    .headTextDiv{
+        width: 96vw;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .headTextDiv{
+        font-size: 21px;
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .headTextDiv{
+        padding: 15px 0;
+        font-size: 14px;
+    }
+}

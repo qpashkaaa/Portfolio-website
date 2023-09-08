@@ -1,0 +1,123 @@
+.wrapperDiv{
+    display:flex;
+    flex-direction: column;
+}
+
+.headerTextDiv{
+    font-size: 200px;
+    color: #FFFFFF05;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    padding: 5% 0;
+    margin-left: -130px;
+    background: transparent;
+}
+@media (max-width: 1900px){
+    .headerTextDiv{
+        margin-left: -10px;
+    }
+}
+
+.supportTextDiv{
+    font-size: 16px;
+    margin-top: -20%;
+    margin-bottom: 1%;
+    background: transparent;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+}
+
+.mainTextDiv{
+    font-size: 55px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    background: transparent;
+}
+
+.contentDiv{
+    background: transparent;
+    margin-top:11%;
+}
+
+@media only screen and (max-width : 1634px) {
+    .headerTextDiv{
+        font-size:170px;
+    }
+    .mainTextDiv{
+        font-size:45px;
+    }
+    .supportTextDiv{
+        font-size:13px;
+    }
+} 
+
+@media only screen and (max-width : 1200px) {
+    .headerTextDiv{
+        font-size:120px;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .headerTextDiv{
+        margin-left: 10px;
+        font-size:100px;
+    }
+
+    .mainTextDiv{
+        margin-left: 40px;
+    }
+    .supportTextDiv{
+        margin-left: 40px;
+    }
+    .contentDiv{
+        background: transparent;
+        margin-top:10%;
+        padding: 0 1%;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .contentDiv{
+        margin-top:8%;
+    }
+    .headerTextDiv{
+        font-size:65px;
+    }
+    .supportTextDiv{
+        margin-top: -165px;
+    }
+    .mainTextDiv{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .headerTextDiv{
+        font-size:50px;
+    }
+    .supportTextDiv{
+        font-size: 10px;
+        margin-top: -110px;
+    }
+    .mainTextDiv{
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .headerTextDiv{
+        font-size: 30px;
+    }
+    .supportTextDiv{
+        margin-left: 12px;
+        font-size: 8px;
+        margin-top: -70px;
+    }
+    .mainTextDiv{
+        margin-left: 12px;
+        font-size: 17px;
+    }
+}

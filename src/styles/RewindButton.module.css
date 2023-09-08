@@ -1,0 +1,41 @@
+.link{
+    text-decoration: none;
+}
+
+.imageDiv{
+    border: 1.5px #FFFFFF solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    text-align: center;
+}
+
+.buttonImg{
+    width: 70%;
+}
+
+.buttonFlex{
+    display: flex;
+    border: 2px #FFFFFF solid;
+    width: 263px;
+    height: 69px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+.buttonText{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    width: 80%;
+    text-align: center;
+}
+
+@media only screen and (max-width : 768px) {
+    .link{
+        display: none;
+    }
+}

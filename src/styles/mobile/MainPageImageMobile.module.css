@@ -1,0 +1,25 @@
+.container{
+    background-color: #181A21;
+    display:none;
+    width: 100vw;
+    height: 100vh;
+    align-items: flex-end;
+}
+
+.portfolioImage{
+    background-color: #181A21;
+    width: 550px;
+    height: 90vh;
+}
+
+@media only screen and (max-width : 992px) {
+    .container{
+        display:flex;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .portfolioImage{
+        height: 80vh;
+    }
+}
