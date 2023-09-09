@@ -2,7 +2,7 @@
   **Portfolio website written using Next.js**
   >*This is a portfolio website implemented using a framework Next.js . Made to demonstrate development skills, and additional study of this technology. The website design was created in the online graphic editor Figma. Based on the design created in Figma, this portfolio website was implemented.*
 
-## [Preview]()
+## [Preview](https://portfolio-website-qpashkaaa.vercel.app/)
 ### Screenshots
 _____
 ![Preview](https://github.com/qpashkaaa/Portfolio-website/assets/95401099/86ffad5b-28ef-41ce-a72a-1fe570dbba92)
@@ -176,7 +176,7 @@ export default function DevToolCard({devTool, percentage}) {
 - [Pavel Roslyakov](https://github.com/qpashkaaa)
 
 ## Contacts
-- [Portfolio Website]()
+- [Portfolio Website](https://portfolio-website-qpashkaaa.vercel.app/)
 - [Telegram](https://t.me/qpashkaaa)
 - [VK](https://vk.com/qpashkaaa)
 - [LinkedIN](https://www.linkedin.com/in/pavel-roslyakov-7b303928b/)
