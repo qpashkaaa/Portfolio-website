@@ -5,7 +5,7 @@
 ## [Preview]()
 ### Screenshots
 _____
-![Preview](https://github.com/qpashkaaa/Portfolio-website/assets/95401099/4eb55913-0e18-4363-b955-11b19f9fa4bd)
+![Preview](https://github.com/qpashkaaa/Portfolio-website/assets/95401099/86ffad5b-28ef-41ce-a72a-1fe570dbba92)
 _____
 
 
