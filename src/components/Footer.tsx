@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
         <div className={styles.contactDiv}>
-            <div className={styles.supportMessageHeader}>Связаться</div>
+            <div className={styles.supportMessageHeader}>Contact</div>
             <div className={styles.supportMessage}>qpashkaaa@gmail.com</div>
             <div className={styles.socialLinksButton}>
                 <FooterSocialLinkButton href={'https://t.me/qpashkaaa'} imgSrc={'../../static/images/TelegramImage.svg'}></FooterSocialLinkButton>
@@ -14,8 +14,8 @@ export default function Footer() {
             </div>
         </div>
         <div className={styles.locationDiv}>
-            <div className={styles.supportMessageHeader}>Местоположение</div>
-            <div className={styles.supportMessage}>Tambov, Russia</div>
+            <div className={styles.supportMessageHeader}>Location</div>
+            <div className={styles.supportMessage}>Moscow, Russia</div>
         </div>
     </footer>
   )

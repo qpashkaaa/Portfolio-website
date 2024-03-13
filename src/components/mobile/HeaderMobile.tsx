@@ -3,8 +3,6 @@ import styles from '../../styles/mobile/HeaderMobile.module.css';
 import HeaderMobileButton from './UIMobile/HeaderMobileButton';
 
 export default function HeaderMobile() {
-    const [activeTab, setActiveTab] = useState(0);
-
     const [headerChecked, setHeaderChecked] = useState(false);
 
     function ChangeHeaderChecked(){
@@ -29,10 +27,10 @@ export default function HeaderMobile() {
                             <span className={`${styles.line} ${styles.line3}`}></span>
                         </div>
                         <div className={styles.menuItems}>
-                            <HeaderMobileButton href={'#aboutMe'} btnText={'О себе'} onClick={SelectedTab}/>
-                            <HeaderMobileButton href={'#mySkills_mobile'} btnText={'Мои навыки'} onClick={SelectedTab}/>
-                            <HeaderMobileButton href={'#myPortfolio'} btnText={'Портфолио'} onClick={SelectedTab}/>
-                            <HeaderMobileButton href={'#contactWithMe'} btnText={'Контакты'} onClick={SelectedTab}/>
+                            <HeaderMobileButton href={'#aboutMe'} btnText={'About me'} onClick={SelectedTab}/>
+                            <HeaderMobileButton href={'#mySkills_mobile'} btnText={'My skills'} onClick={SelectedTab}/>
+                            <HeaderMobileButton href={'#myPortfolio'} btnText={'Portfolio'} onClick={SelectedTab}/>
+                            <HeaderMobileButton href={'#contactWithMe'} btnText={'Contacts'} onClick={SelectedTab}/>
                         </div>
                     </div>
                 </div>

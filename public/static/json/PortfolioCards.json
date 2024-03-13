@@ -2,7 +2,7 @@
     {
         "id": 1,
         "type": "Website",
-        "shortDescription":"Это веб-сайт портфолио, реализованный с использованием фреймворка Next.js. Сделан для демонстрации навыков разработки, и дополнительного изучения данной технологии. Дизайн сайта был создан в графическом онлайн-редакторе Figma. Основываясь на дизайн, созданный в Figma, был реализован данный веб-сайт портфолио.",
+        "shortDescription":"This is a portfolio website implemented using a framework Next.js . It is made to demonstrate development skills and additional study of this technology. The website design was created in the online graphic editor Figma. Based on the design created in Figma, this portfolio website was implemented.",
         "imgSrc":"../../static/images/portfolioCardsImages/PortfolioWebsite.png",
         "firstButtonText": "Code",
         "firstHref":"https://github.com/qpashkaaa/Portfolio-website",
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "type": "Website",
-        "shortDescription":"Это веб-сайт, написанный для организации с использованием HTML, JavaScript, CSS, PHP, MySQL(phpMyAdmin). Позволяет просматривать необходимую информацию, а так же генерировать QR-код для оплаты с ведением логов его создания в БД MySQL. Данный веб-сайт был спроектирован и создан, исходя из пожеланий заказчика.",
+        "shortDescription":"This is a website written for an organization using HTML, JavaScript, CSS, PHP, MySQL(phpMyAdmin). It allows you to view the necessary information, as well as generate a QR code for payment with logging of its creation in the MySQL database. This website was designed and created based on the customer's wishes.",
         "imgSrc":"../../static/images/portfolioCardsImages/PoverkaGazVoda.png",
         "firstButtonText": "Demo",
         "firstHref":"https://www.poverka-gazvoda.ru/",
@@ -22,7 +22,7 @@
     {
         "id": 3,
         "type": "Desktop",
-        "shortDescription":"Это десктопное CRUD приложение, написанное с использованием WPF(MVVM), PostgreSQL, EntityFramework. Оно было создано для освоения данных технологий и изучения паттерна разработки Model-View-ViewModel(MVVM). Приложение позволяет создавать, просматривать, обновлять и удалять данные в БД PostgreSQL.",
+        "shortDescription":"This is a desktop CRUD application written using WPF(MVVM), PostgreSQL, EntityFramework. It was created to master these technologies and study the Model-View-ViewModel(MVVM) development pattern. The application allows you to create, view, update and delete data in the PostgreSQL database.",
         "imgSrc":"../../static/images/portfolioCardsImages/WarehouseAccounting.png",
         "firstButtonText": "Code",
         "firstHref":"https://github.com/qpashkaaa/Warehouse-accounting",
@@ -32,7 +32,7 @@
     {
         "id": 4,
         "type": "Website",
-        "shortDescription":"Это дашборд начальника цеха АО `ТЗ `Ревтруд`, написанный с использованием HTML, JavaScript, CSS, PHP, MySQL(phpMyAdmin). Позволяет зарегистрироваться, авторизироваться, а так же просматривать необходимую информацию. Данный дашборд был реализован в целях освоения учебной программы МК ТГТУ (г.Тамбов).",
+        "shortDescription":"This is the dashboard of the head of the workshop of JSC TK Revtrud, written using HTML, JavaScript, CSS, PHP, MySQL(phpMyAdmin). Allows you to register, log in, and view the necessary information. This dashboard was implemented in order to master the curriculum of MK TSTU (Tambov).",
         "imgSrc":"../../static/images/portfolioCardsImages/Dashboard.png",
         "firstButtonText": "Code",
         "firstHref":"https://github.com/qpashkaaa/MK-TSTU-director-dashboard",
@@ -42,10 +42,20 @@
     {
         "id": 5,
         "type": "Desktop",
-        "shortDescription":"Это десктопное приложение - сборник лабораторных работ по предмету `Операционные системы`. Основные задачи работ - изучение Win32API, архитектуры ОС, исследование потоков, изучение InterProcess Communication, создание эмулятора планировщика процессов ОС. Реализовано в целях освоения учебной программы кафедры САПР ТГТУ (г.Тамбов).",
+        "shortDescription":"This desktop application is a collection of laboratory work on the subject of `Operating Systems'. The main tasks of the work are to study the Win32 API, OS architecture, thread research, study InterProcess Communication, and create an emulator for the OS process scheduler. Implemented in order to master the curriculum of the CAD department of TSTU (Tambov).",
         "imgSrc":"../../static/images/portfolioCardsImages/OperatingSystemsLR.png",
         "firstButtonText": "Code",
         "firstHref":"https://github.com/qpashkaaa/Operating-systems-laboratory-work",
+        "addCodeButton":false,
+        "secondHref":""
+    },
+    {
+        "id": 6,
+        "type": "Other App",
+        "shortDescription":"This application is a simple example of Dependency Injection in .NET. It implements getting data from MongoDB and from a third-party API. The logger is connected by dependency injection. This is the simplest and most basic example that can be developed depending on the needs.",
+        "imgSrc":"../../static/images/portfolioCardsImages/DependencyInjection.jpg",
+        "firstButtonText": "Code",
+        "firstHref":"https://github.com/qpashkaaa/Dependency-Injection-Example",
         "addCodeButton":false,
         "secondHref":""
     }

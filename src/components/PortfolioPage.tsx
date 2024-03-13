@@ -64,18 +64,17 @@ export default function PortfolioPage() {
           if (tab === 2)
           portfolioCardsSelectedCategory.push(d)
         }
-        else if (d.type == 'Mobile'){
+        else if (d.type == 'Website'){
           if (tab === 3)
           portfolioCardsSelectedCategory.push(d)
         }
-        else if (d.type == 'Website'){
+        else if (d.type == 'Other App'){
           if (tab === 4)
           portfolioCardsSelectedCategory.push(d)
         }
       }
     })
 
-    // add empty elements so that there are no jumps in the height of the block
     if (portfolioCardsSelectedCategory.length === 0 && countElementsInRow != 1 && (portfolioCardsSelectedCategory.length % countElementsInRow) != 0){
       for (let i = 0; i <3;i++){
         portfolioCardsSelectedCategory.push({
@@ -92,7 +91,6 @@ export default function PortfolioPage() {
 
     maxPage = Math.ceil(portfolioCardsSelectedCategory.length / countElementsInRow);
 
-    // if we have 2 element's on page, need will add one plug element, for normal display in row(not high space-between)
     if ((portfolioCardsSelectedCategory.length % countElementsInRow) == countElementsInRow - 1 && (portfolioCardsSelectedCategory.length % countElementsInRow) != 0){
       portfolioCardsSelectedCategory.push({
         "id": 0,
@@ -105,7 +103,6 @@ export default function PortfolioPage() {
       })
     }
 
-    // show the category of selected items
     portfolioCardsSelectedCategory.forEach((d, i) => {
         let index = Math.floor(i / countElementsInRow);
         componentArray[index] = [
@@ -122,16 +119,15 @@ export default function PortfolioPage() {
     return componentArray;
   };
   
-  // this code section need for activate keyframe css animation
   if (page === 0){
     setTimeout(ForwardPage, 0.0001)
   }
   
   return (
     <PagePartBackground className={'pagePartBackground'} id={'myPortfolio'}
-      bgText={'Портфолио'}
-      supportText={'МОИ РАБОТЫ'}
-      mainText={'Портфолио'}
+      bgText={'Portfolio'}
+      supportText={'MY WORKS'}
+      mainText={'Portfolio'}
       bgColor={'#181A21'}>
       <div className={styles.mainDiv}>
         <PortfolioHeader activeTab={tab} setTab={setTab} setPage={setPage}></PortfolioHeader>

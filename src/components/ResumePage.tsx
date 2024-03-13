@@ -6,17 +6,18 @@ import ResumeCard from "./UI/ResumeCard";
 export default function ResumePage() {
     return (
         <PagePartBackground className={''} id={'myResume'}
-            bgText={'Резюме'}
-            supportText={'ОПЫТ & ОБРАЗОВАНИЕ'}
-            mainText={'Резюме'}
+            bgText={'Resume'}
+            supportText={'EXPERIENCE & EDUCATION'}
+            mainText={'Resume'}
             bgColor={''}>
             <div className={styles.mainDiv}>
-                <ResumeSection headText={'Образование'}>
-                    <ResumeCard mainText={'Кафедра САПР(Бакалавриат)'} supportText={'ТГТУ, Тамбов'} rangeOfYears={'2022 - н.в.'}></ResumeCard>
-                    <ResumeCard mainText={'Техник-программист(СПО)'} supportText={'МК ТГТУ, Тамбов'} rangeOfYears={'2018 - 2022'}></ResumeCard>
+                <ResumeSection headText={'Education'}>
+                    <ResumeCard mainText={'Bachelor of CAD Department'} supportText={'TSTU, Tambov'} rangeOfYears={'2022 - Currently'}></ResumeCard>
+                    <ResumeCard mainText={'Programmer technician'} supportText={'MK TSTU, Tambov'} rangeOfYears={'2018 - 2022'}></ResumeCard>
                 </ResumeSection>
-                <ResumeSection headText={'Опыт'}>
-                    <ResumeCard mainText={'ООО Техсервис'} supportText={'Тамбов'} rangeOfYears={'2021 - 2022'}></ResumeCard>
+                <ResumeSection headText={'Experience'}>
+                    <ResumeCard mainText={'Hybrid.ai'} supportText={'Tambov'} rangeOfYears={'2023 - Currently'}></ResumeCard>
+                    <ResumeCard mainText={'Techservice LLC'} supportText={'Tambov'} rangeOfYears={'2021 - 2022'}></ResumeCard>
                 </ResumeSection>
             </div>
         </PagePartBackground>

@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { useRouter } from "next/router";
 import styles from '../../styles/ContactCard.module.css';
 
 export default function ContactCard() {
 
-  const [btnText, setBtnText] = useState('Отправить сообщение');
-  const [headerText, setHeaderText] = useState('Отправить сообщение');
+  const [btnText, setBtnText] = useState('Send a message');
+  const [headerText, setHeaderText] = useState('Send a message');
   const [resStatus, setResStatus] = useState(0);
 
   const [userName, setUserName] = useState('');
@@ -21,7 +20,7 @@ export default function ContactCard() {
   const SendFormToTelegram = async () => {
 
     if (userName == '' || contactInfo == '' || theme == '' || message ==''){
-      setHeaderText('Заполните все поля');
+      setHeaderText('All fields must be filled in');
       if (userName == '') {
         setUserNameInputBorder('red dotted');
       }
@@ -48,17 +47,17 @@ export default function ContactCard() {
       }
     }
     else {
-      setHeaderText('Отправить сообщение');
+      setHeaderText('Send a message');
       setUserNameInputBorder('#868A9B solid');
       setContactInfoInputBorder('#868A9B solid');
       setThemeInputBorder('#868A9B solid');
       setMessageInputBorder('#868A9B solid');
       
-      var messageToTelegram = `<b>Сообщение с сайта-портфолио</b>\n`;
-      messageToTelegram += `<b>Имя: </b>${userName}\n`;
-      messageToTelegram += `<b>Контактные данные: </b>${contactInfo}\n`;
-      messageToTelegram += `<b>Тема: </b>${theme}\n`;
-      messageToTelegram += `<b>Сообщение: </b>${message}`;
+      var messageToTelegram = `<b>Message from the portfolio site</b>\n`;
+      messageToTelegram += `<b>Name: </b>${userName}\n`;
+      messageToTelegram += `<b>Contact information: </b>${contactInfo}\n`;
+      messageToTelegram += `<b>Theme: </b>${theme}\n`;
+      messageToTelegram += `<b>Message: </b>${message}`;
 
       const response = await fetch('api/telegramBot', {
         method: 'POST',
@@ -80,7 +79,7 @@ export default function ContactCard() {
       else {
         setBtnText(data.message);
         setTimeout(() => {
-          setBtnText('Отправить сообщение')
+          setBtnText('Send a message')
           setResStatus(0)
         }, 5000)
       }
@@ -96,14 +95,14 @@ export default function ContactCard() {
         <div className={resStatus === 200 ? styles.hide200Code : styles.nameAndEmailDiv}>
           <div className={styles.nameDiv}>
             <input className={`userNameBorderInput ${styles.shortInput}`}
-              placeholder={'Ваше имя'}
+              placeholder={'Your name'}
               maxLength={30}
               value={userName}
               onChange={(e) => setUserName(e.target.value)} />
           </div>
           <div className={resStatus === 200 ? styles.hide200Code : styles.emailDiv}>
             <input className={`contactInfoBorderInput ${styles.shortInput}`}
-              placeholder={'Контактные данные'}
+              placeholder={'Contact information'}
               maxLength={50}
               value={contactInfo}
               onChange={(e) => setContactInfo(e.target.value)} />
@@ -111,14 +110,14 @@ export default function ContactCard() {
         </div>
         <div className={resStatus === 200 ? styles.hide200Code : styles.themeDiv}>
           <input className={`themeInfoBorderInput ${styles.longInput}`}
-            placeholder={'Тема'}
+            placeholder={'Theme'}
             maxLength={70}
             value={theme}
             onChange={(e) => setTheme(e.target.value)} />
         </div>
         <div className={resStatus === 200 ? styles.hide200Code : styles.messageDiv}>
           <textarea className={`messageInfoBorderInput ${styles.messageTextArea}`}
-            placeholder={'Введите Ваше сообщение'}
+            placeholder={'Enter your message'}
             maxLength={350}
             value={message}
             onChange={(e) => setMessage(e.target.value)} />

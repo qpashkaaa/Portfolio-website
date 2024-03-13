@@ -5,9 +5,9 @@ import ContactCard from "./UI/ContactCard";
 export default function ContactPage() {
   return (
     <PagePartBackground className={''} id={'contactWithMe'}
-            bgText={'Контакты'}
-            supportText={'СВЯЖИТЕСЬ СО МНОЙ'}
-            mainText={'Контакты'}
+            bgText={'Contacts'}
+            supportText={'CONTACT ME'}
+            mainText={'Contacts'}
             bgColor={'#181A21'}>
         <div className={styles.mainDiv}>
             <ContactCard></ContactCard>

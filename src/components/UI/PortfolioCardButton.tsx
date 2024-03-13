@@ -5,7 +5,7 @@ export default function PortfolioCardButton({ text, href }) {
     if (text == 'Code'){
         var imgSrc = '../../../static/images/GitHubImage.svg';
     }
-    else if (text == 'Demo'){
+    else if (text == 'Demo' || text == 'Owner'){
         var imgSrc = '../../../static/images/LinkButtonImage.svg';
     }
     return (

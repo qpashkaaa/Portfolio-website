@@ -12,9 +12,9 @@ export default function MainPageTextMobile() {
                     <FooterSocialLinkButton href={'https://t.me/qpashkaaa'} imgSrc={'../../static/images/TelegramImage.svg'}></FooterSocialLinkButton>
                 </div>
                 <div className={styles.textDiv}>
-                    <div className={styles.hiDiv}>Привет, Я</div>
-                    <div className={styles.nameDiv}>Росляков Павел</div>
-                    <div className={styles.supportInfoDiv}>C# разработчик / Веб разработчик</div>
+                    <div className={styles.hiDiv}>Hi, I'm</div>
+                    <div className={styles.nameDiv}>Roslyakov Pavel</div>
+                    <div className={styles.supportInfoDiv}>.NET Backend Developer</div>
                 </div>
             </div>
         </>

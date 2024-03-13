@@ -5,16 +5,16 @@ export default function MainShortInfo() {
         <div className={styles.mainFlexDiv}>
             <div className = {styles.wrapperFlexDiv}>
                 <div className={styles.leftFlexDiv}>
-                    <div className={styles.numberDiv}>5+</div>
-                    <div className={styles.textDiv}>Pet-проектов</div>
+                    <div className={styles.numberDiv}>1.5+</div>
+                    <div className={styles.textDiv}>Years of <br></br>commercial <br></br>development</div>
                 </div>
                 <div className={styles.centerFlexDiv}>
-                    <div className={styles.numberDiv}>1+</div>
-                    <div className={styles.textDiv}>Год разработки</div>
+                    <div className={styles.numberDiv}>7+</div>
+                    <div className={styles.textDiv}>Projects</div>
                 </div>
                 <div className={styles.rightFlexDiv}>
                     <div className={styles.numberDiv}>15+</div>
-                    <div className={styles.textDiv}>Инструментов <br></br>разработки</div>
+                    <div className={styles.textDiv}>Development <br></br>tools</div>
                 </div>
             </div>
         </div>

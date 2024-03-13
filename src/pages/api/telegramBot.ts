@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { resolve } from 'path'
  
 type ResponseData = {
   message: string
@@ -24,10 +23,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
       }
     }).then(externalRes => {
       if (externalRes.status === 200){
-        messageToClient.message = 'Сообщение успешно отправлено! В скором времени я свяжусь с Вами!'
+        messageToClient.message = 'The message has been sent successfully! I will contact you soon!'
       }
       else{
-        messageToClient.message = 'Ошибка отправки сообщения, повторите попытку позже';
+        messageToClient.message = 'Error sending the message, please try again later.';
       }
       res.status(externalRes.status).json(messageToClient);
     })

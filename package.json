@@ -1,6 +1,6 @@
 {
   "name": "portfolio-website",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pavel Roslyakov",
   "license": "ISC",
   "dependencies": {
     "gsap": "^3.12.2",

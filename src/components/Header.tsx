@@ -6,16 +6,16 @@ export default function Header() {
         <header className={styles.header}>
             <ul className={styles.desktopUl}>
                 <li>
-                    <A href={'#aboutMe'} text={'О себе'}></A>
+                    <A href={'#aboutMe'} text={'About me'}></A>
                 </li>
                 <li>
-                    <A href={'#mySkills'} text={'Мои навыки'}></A>
+                    <A href={'#mySkills'} text={'My skills'}></A>
                 </li>
                 <li>
-                    <A href={'#myPortfolio'} text={'Портфолио'}></A>
+                    <A href={'#myPortfolio'} text={'Portfolio'}></A>
                 </li>
                 <li>
-                    <A href={'#contactWithMe'} text={'Контакты'}></A>
+                    <A href={'#contactWithMe'} text={'Contacts'}></A>
                 </li>
             </ul>
         </header>

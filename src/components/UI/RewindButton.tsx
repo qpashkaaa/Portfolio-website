@@ -1,4 +1,3 @@
-import A from './A';
 import styles from '../../styles/RewindButton.module.css';
 import Link from 'next/link';
 
