@@ -16,7 +16,7 @@ export default function ResumePage() {
                     <ResumeCard mainText={'Programmer technician'} supportText={'MK TSTU, Tambov'} rangeOfYears={'2018 - 2022'}></ResumeCard>
                 </ResumeSection>
                 <ResumeSection headText={'Experience'}>
-                    <ResumeCard mainText={'Hybrid.ai'} supportText={'Tambov'} rangeOfYears={'2023 - Currently'}></ResumeCard>
+                    <ResumeCard mainText={'Hybrid.ai'} supportText={'Tambov'} rangeOfYears={'2022 - Currently'}></ResumeCard>
                     <ResumeCard mainText={'Techservice LLC'} supportText={'Tambov'} rangeOfYears={'2021 - 2022'}></ResumeCard>
                 </ResumeSection>
             </div>
